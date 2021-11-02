@@ -1,0 +1,514 @@
+[
+	{
+		"index": 1,
+		"name": "乾",
+		"title": "乾为天",
+		"value": "111111",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 2,
+		"name": "坤",
+		"title": "坤为地",
+		"value": "000000",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 3,
+		"name": "屯",
+		"title": "水雷屯",
+		"value": "010001",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 4,
+		"name": "蒙",
+		"title": "山水蒙",
+		"value": "100010",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 5,
+		"name": "需",
+		"title": "水天需",
+		"value": "010111",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 6,
+		"name": "讼",
+		"title": "天水讼",
+		"value": "111010",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 7,
+		"name": "师",
+		"title": "地水师",
+		"value": "000010",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 8,
+		"name": "比",
+		"title": "水地比",
+		"value": "010000",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 9,
+		"name": "小畜",
+		"title": "风天小畜",
+		"value": "110111",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 10,
+		"name": "履",
+		"title": "天泽履",
+		"value": "111011",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 11,
+		"name": "泰",
+		"title": "地天泰",
+		"value": "000111",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 12,
+		"name": "否",
+		"title": "天地否",
+		"value": "111000",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 13,
+		"name": "同人",
+		"title": "天火同人",
+		"value": "111101",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 14,
+		"name": "大有",
+		"title": "火天大有",
+		"value": "101111",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 15,
+		"name": "谦",
+		"title": "地山谦",
+		"value": "000100",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 16,
+		"name": "豫",
+		"title": "雷地豫",
+		"value": "001000",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 17,
+		"name": "随",
+		"title": "泽雷随",
+		"value": "011001",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 18,
+		"name": "蛊",
+		"title": "山风蛊",
+		"value": "100110",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 19,
+		"name": "临",
+		"title": "地泽临",
+		"value": "000011",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 20,
+		"name": "观",
+		"title": "风地观",
+		"value": "110000",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 21,
+		"name": "噬嗑",
+		"title": "火雷噬嗑",
+		"value": "101001",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 22,
+		"name": "贲",
+		"title": "山火贲",
+		"value": "100101",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 23,
+		"name": "剥",
+		"title": "山地剥",
+		"value": "100000",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 24,
+		"name": "复",
+		"title": "地雷复",
+		"value": "000001",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 25,
+		"name": "无妄",
+		"title": "天雷无妄",
+		"value": "111001",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 26,
+		"name": "大畜",
+		"title": "山天大畜",
+		"value": "100111",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 27,
+		"name": "颐",
+		"title": "山雷颐",
+		"value": "100001",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 28,
+		"name": "大过",
+		"title": "泽风大过",
+		"value": "011110",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 29,
+		"name": "坎",
+		"title": "坎为水",
+		"value": "010010",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 30,
+		"name": "离",
+		"title": "离为火",
+		"value": "101101",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 31,
+		"name": "咸",
+		"title": "泽山咸",
+		"value": "011100",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 32,
+		"name": "恒",
+		"title": "雷风恒",
+		"value": "001110",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 33,
+		"name": "遁",
+		"title": "天山遁",
+		"value": "111100",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 34,
+		"name": "大壮",
+		"title": "雷天大壮",
+		"value": "001111",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 35,
+		"name": "晋",
+		"title": "火地晋",
+		"value": "101000",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 36,
+		"name": "明夷",
+		"title": "地火明夷",
+		"value": "000101",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 37,
+		"name": "家人",
+		"title": "风火家人",
+		"value": "110101",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 38,
+		"name": "睽",
+		"title": "火泽睽",
+		"value": "101011",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 39,
+		"name": "蹇",
+		"title": "水山蹇",
+		"value": "010100",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 40,
+		"name": "解",
+		"title": "雷水解",
+		"value": "001010",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 41,
+		"name": "损",
+		"title": "山泽损",
+		"value": "100011",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 42,
+		"name": "益",
+		"title": "风雷益",
+		"value": "110001",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 43,
+		"name": "夬",
+		"title": "泽天夬",
+		"value": "011111",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 44,
+		"name": "姤",
+		"title": "天风姤",
+		"value": "111110",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 45,
+		"name": "萃",
+		"title": "泽地萃",
+		"value": "011000",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 46,
+		"name": "升",
+		"title": "地风升",
+		"value": "000110",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 47,
+		"name": "困",
+		"title": "泽水困",
+		"value": "011010",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 48,
+		"name": "井",
+		"title": "水风井",
+		"value": "010110",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 49,
+		"name": "革",
+		"title": "泽火革",
+		"value": "011101",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 50,
+		"name": "鼎",
+		"title": "火风鼎",
+		"value": "101110",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 51,
+		"name": "震",
+		"title": "震为雷",
+		"value": "001001",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 52,
+		"name": "艮",
+		"title": "艮为山",
+		"value": "100100",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 53,
+		"name": "渐",
+		"title": "风山渐",
+		"value": "110100",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 54,
+		"name": "归妹",
+		"title": "雷泽归妹",
+		"value": "001011",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 55,
+		"name": "丰",
+		"title": "雷火丰",
+		"value": "001101",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 56,
+		"name": "旅",
+		"title": "火山旅",
+		"value": "101100",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 57,
+		"name": "巽",
+		"title": "巽为风",
+		"value": "110110",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 58,
+		"name": "泽",
+		"title": "兑为泽",
+		"value": "011011",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 59,
+		"name": "涣",
+		"title": "风水涣",
+		"value": "110010",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 60,
+		"name": "节",
+		"title": "水泽节",
+		"value": "010011",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 61,
+		"name": "中孚",
+		"title": "风泽中孚",
+		"value": "110011",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 62,
+		"name": "小过",
+		"title": "雷山小过",
+		"value": "001100",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 63,
+		"name": "既济",
+		"title": "水火既济",
+		"value": "010101",
+		"hexagram": "",
+		"trigrams": []
+	},
+	{
+		"index": 64,
+		"name": "未济",
+		"title": "火水未济",
+		"value": "101010",
+		"hexagram": "",
+		"trigrams": []
+	}
+]

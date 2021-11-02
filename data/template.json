@@ -1,0 +1,100 @@
+{
+    // 基础信息
+    "basic": {
+        "index": 0,  // 序号
+        "name": "",  // 卦名
+        "title": "", // 主客卦解释（下主，上客）
+        "value": "", // 每爻的定义（从左到右为从上到下看）
+        "hexagram": "", // 卦辞
+        "trigrams": [   // 爻辞（从初爻到上爻）
+        ]
+    },
+    
+    // 预测应用
+    "predict": {
+        "index": 0,  // 序号
+        "name": "",  // 卦名
+        "evaluate": "", // 凶吉评价
+        "verdict": "",  // 本卦性质
+        "description": "", // 卦辞简述
+        "analysis": "",    // 卦象分析
+        
+        // 预测项目
+        "prediction": {
+            "career": "", // 事业 
+            "business": "", // 经商
+            "fame": "", // 求名
+            "travel": "", // 外出
+            "marry": "", //婚恋
+            "decision": "" //决策
+        }
+    },
+    
+    // 卦爻辞及简要解读
+    "hexagram": {
+        "index": 0,  // 序号
+        "name": "",  // 卦名
+        "anno": "",   // 卦辞注释
+        "trans": "",  // 卦辞翻译
+        "analysis": "",  // 卦辞解读
+        
+        // 爻辞序列（从初爻到上爻）
+        "trigrams": [
+            {
+                "anno": "",  // 爻辞注释
+                "trans": "", // 爻辞翻译
+                "analysis": [  // 爻辞解读
+                ]
+            }
+        ]
+    },
+    
+    // 象传卦辞爻辞解读
+    "image_tell": {
+        "index": 0,  // 序号
+        "name": "",  // 卦名
+        
+        //大象传卦辞解释
+        "hexagram": {
+            "origin" : "", // 原文
+            "anno": "",   // 注释
+            "trans": "",  // 翻译
+            "analysis": [  // 解读
+            ]
+        },
+        
+        //小象传爻辞解释（从初爻到上爻）
+        "trigrams": [
+            {
+                "origin" : "", // 原文
+                "anno": "",   // 注释
+                "trans": "",  // 翻译
+                "analysis": [  // 解读
+                ]
+            }
+        ]
+    },
+    
+    // 彖传卦辞解释
+    "word_tell": {
+        "index": 0,  // 序号
+        "name": "",  // 卦名
+        "origin" : "", // 原文
+        "anno": "",   // 注释
+        "trans": ""  // 翻译
+    },
+    
+    // 其它现代解读文章
+    "other_tell": {
+        "index": 0,  // 序号
+        "name": "",  // 卦名
+        "articles": [
+            {
+                "title": "", // 标题（可选）
+                "image_url": "", // 图片（可选）
+                "content": "" //内容
+            }
+        ]
+    }
+    
+}

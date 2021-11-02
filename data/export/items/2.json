@@ -71,6 +71,13 @@
         }
     ],
     
+    // 卦辞象传解释
+    "imageTell": {
+        "originalText": "",
+        "translation": "",
+        "explain": []
+    },
+    
     // 爻辞
     "hexagrams": [
         {

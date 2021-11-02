@@ -1,0 +1,450 @@
+[
+	{
+		"index": 1,
+		"name": "乾",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 2,
+		"name": "坤",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 3,
+		"name": "屯",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 4,
+		"name": "蒙",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 5,
+		"name": "需",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 6,
+		"name": "讼",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 7,
+		"name": "师",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 8,
+		"name": "比",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 9,
+		"name": "小畜",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 10,
+		"name": "履",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 11,
+		"name": "泰",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 12,
+		"name": "否",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 13,
+		"name": "同人",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 14,
+		"name": "大有",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 15,
+		"name": "谦",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 16,
+		"name": "豫",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 17,
+		"name": "随",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 18,
+		"name": "蛊",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 19,
+		"name": "临",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 20,
+		"name": "观",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 21,
+		"name": "噬嗑",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 22,
+		"name": "贲",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 23,
+		"name": "剥",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 24,
+		"name": "复",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 25,
+		"name": "无妄",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 26,
+		"name": "大畜",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 27,
+		"name": "颐",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 28,
+		"name": "大过",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 29,
+		"name": "坎",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 30,
+		"name": "离",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 31,
+		"name": "咸",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 32,
+		"name": "恒",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 33,
+		"name": "遁",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 34,
+		"name": "大壮",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 35,
+		"name": "晋",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 36,
+		"name": "明夷",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 37,
+		"name": "家人",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 38,
+		"name": "睽",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 39,
+		"name": "蹇",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 40,
+		"name": "解",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 41,
+		"name": "损",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 42,
+		"name": "益",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 43,
+		"name": "夬",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 44,
+		"name": "姤",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 45,
+		"name": "萃",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 46,
+		"name": "升",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 47,
+		"name": "困",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 48,
+		"name": "井",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 49,
+		"name": "革",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 50,
+		"name": "鼎",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 51,
+		"name": "震",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 52,
+		"name": "艮",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 53,
+		"name": "渐",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 54,
+		"name": "归妹",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 55,
+		"name": "丰",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 56,
+		"name": "旅",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 57,
+		"name": "巽",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 58,
+		"name": "泽",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 59,
+		"name": "涣",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 60,
+		"name": "节",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 61,
+		"name": "中孚",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 62,
+		"name": "小过",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 63,
+		"name": "既济",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	},
+	{
+		"index": 64,
+		"name": "未济",
+		"origin": "",
+		"anno": "",
+		"trans": ""
+	}
+]

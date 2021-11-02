@@ -1,5 +1,5 @@
 const util=require("./lib/util");
-const fs=require("fs");
 
-let result=util.readJson("./data/export/1.json");
-console.log(result);
+// 读取数据及模版
+const datas=util.readJson("./data/data.json");
+
