@@ -44,10 +44,14 @@
         }
         function setData(value){
             let item=datas.find(e=>e.value==value);
+            localStorage.setItem("last_hexagram", value);
             $(".name").html(item.name+"卦 第"+toChinesNum(item.index));
             $(".text").html(item.hexagram);
             let html=item.trigrams.map(e=>'<li>'+e+'</li>').join("");
             $(".trigram").html(html);
+            value.split("").forEach((e, i)=>{
+                $(".hexagram .item:eq("+i+")").toggleClass("no", e=='0');
+            })
         }
         
         $(".hexagram>.item").on("click", function(e){
@@ -63,7 +67,8 @@
 
         $.getJSON("./data/export/basic.json", function(res){
             datas=res;
-            setData(res[0].value);
+            let hexagram=localStorage.getItem("last_hexagram")||res[0].value;
+            setData(hexagram);
         });
     </script>
 </body>
