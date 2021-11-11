@@ -6,70 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>周易助手</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="lib/jquery-2.1.0.min.js"></script>
+    <script src="lib/vue.js"></script>
 </head>
 <body>
-    <div class="main">
-        <h2 class="name">乾卦</h2>
-        <div class="text">乾卦</div>
-        <div class="hexagram">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
-        <ul class="trigram"></ul>
-    </div>
-    <script>
-        let datas = [];
-        function toChinesNum(num){
-            let changeNum = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
-            let unit = ["", "十", "百", "千", "万"];
-            num = parseInt(num);
-            let getWan = (temp) => {
-                let strArr = temp.toString().split("").reverse();
-                let newNum = "";
-                for (var i = 0; i < strArr.length; i++) {
-                    let tmp = i > 0 && strArr[i] == 0 && strArr[i - 1] == 0 ? "" : changeNum[strArr[i]] + (strArr[i] == 0 ? unit[0] : unit[i]);
-                    newNum = (i == 0 && strArr[i] == 0 ? "" : tmp) + newNum;
-                }
-                return newNum;
-            }
-            let overWan = Math.floor(num / 10000);
-            let noWan = num % 10000;
-            if (noWan.toString().length < 4) { noWan = "0" + noWan; }
-            return overWan ? getWan(overWan) + "万" + getWan(noWan) : getWan(num);
-        }
-        function setData(value){
-            let item=datas.find(e=>e.value==value);
-            localStorage.setItem("last_hexagram", value);
-            $(".name").html(item.name+"卦 第"+toChinesNum(item.index));
-            $(".text").html(item.hexagram);
-            let html=item.trigrams.map(e=>'<li>'+e+'</li>').join("");
-            $(".trigram").html(html);
-            value.split("").forEach((e, i)=>{
-                $(".hexagram .item:eq("+i+")").toggleClass("no", e=='0');
-            })
-        }
-        
-        $(".hexagram>.item").on("click", function(e){
-            let isNo=$(this).hasClass("no");
-            !isNo ? $(this).addClass("no"): $(this).removeClass("no");
-            let values=[];
-            $(".hexagram>.item").each(function(){
-                let isNo=$(this).hasClass("no");
-                values.push(isNo?"0":"1");
-            });
-            setData(values.join(""));
-        });
-
-        $.getJSON("./data/export/basic.json", function(res){
-            datas=res;
-            let hexagram=localStorage.getItem("last_hexagram")||res[0].value;
-            setData(hexagram);
-        });
-    </script>
+    <div id="app"></div>
+    <!-- <script type="module" src="lib/index.js"></script> -->
+    <script type="module" src="lib/app.js"></script>
 </body>
 </html>

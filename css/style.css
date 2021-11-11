@@ -11,14 +11,15 @@ body,html{
 }
 
 .main .name{
-    margin-top: 5vh;
+    margin-top: 3vh;
     margin-bottom: 0;
-    padding: 0;
+    padding: 2vh 0;
+    font-size: 1.1rem;
 }
 .main .text{
-    margin: 0 8vw;
-    height: 2.5rem;
+    margin: 1vh 8vw;
     font-weight: normal;
+    height: 2.5rem;
 }
 
 .main .hexagram{
@@ -49,8 +50,13 @@ body,html{
     width: 45%;
 }
 .main .trigram{
-    flex: 1
+    flex: 1;
+    margin: 5px 5px 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .main .trigram li{
-    margin: 5px 10px;
+    padding: 5px 0;
+    font-size: 1.0rem;
 }
