@@ -117,9 +117,11 @@ body,html{
 }
 .dialog .detail .analysis{
     max-height: 40vh;
+    max-width: 80vw;
     overflow-y: auto;
     background-color: #eee;
     font-size: 0.9rem;
     padding: 1vw;
     border-radius: 2vw;
+    word-break: break-all;
 }
