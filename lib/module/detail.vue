@@ -8,7 +8,7 @@
                 <p v-for="(item, index) of anno" :key="index"><b>注释：</b>{{item}}</p>
             </div>
             <div v-if="analysis.length" class="analysis">
-                <p v-for="(item, index) of analysis" :key="index"><b>分析{{index+1}}：</b>{{item}}</p>
+                <p v-for="(item, index) of analysis" :key="index"><b>分析{{analysis.length>1?index+1:''}}：</b>{{item}}</p>
             </div>
         </div>
     </div>
@@ -23,12 +23,19 @@ export default {
         };
     },
     created: function(){
-        console.log(this.anno);
+        if(!this.isShow){
+            this.$emit('close');
+        }
     },
     computed: {
+        isShow: function(){
+            return this.anno.length>0 || this.trans.length>0 || this.analysis.length>0
+        },
         anno: function(){
             const index=this.index;
-            const content=index==-1 ? this.detail.anno : this.detail.trigrams[index].anno;
+            const content=index==-1 ?  this.detail.anno : 
+                    (typeof(this.detail.trigrams[index])!='undefined' ?
+                        this.detail.trigrams[index].anno : '');
             if(content instanceof Array){
                 return content;
             }
@@ -39,7 +46,9 @@ export default {
         },
         trans: function(){
             const index=this.index;
-            const content=index==-1 ? this.detail.trans : this.detail.trigrams[index].trans;
+            const content=index==-1 ? this.detail.trans : 
+                (typeof(this.detail.trigrams[index])!='undefined' ? 
+                    this.detail.trigrams[index].trans : '');
             if(content instanceof Array){
                 return content;
             }
@@ -50,7 +59,9 @@ export default {
         },
         analysis: function(){
             const index=this.index;
-            const content=index==-1 ? this.detail.analysis : this.detail.trigrams[index].analysis;
+            const content=index==-1 ? this.detail.analysis : 
+                (typeof(this.detail.trigrams[index])!='undefined' ? 
+                    this.detail.trigrams[index].analysis: '');
             if(content instanceof Array){
                 return content;
             }
