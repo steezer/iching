@@ -102,3 +102,21 @@ body,html{
 .dialog .select ul li.on{
     font-weight: bold;
 }
+
+.dialog .detail{
+    margin: auto 3vw;
+    padding: 3vw;
+    color: #666;
+}
+
+.dialog .detail p{
+    margin: 0.5vh 0;
+}
+
+.dialog .detail .analysis{
+    max-height: 50vh;
+    overflow-y: auto;
+    background-color: #eee;
+    font-size: 0.9rem;
+    padding: 1vw;
+}

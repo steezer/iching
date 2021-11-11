@@ -1,22 +1,27 @@
 <template>
     <div v-if="selected!=null" class="main">
         <h2 class="name" @click="handleSelect">
-            {{selected.name}}卦 第{{selected.index|toChinesNum}}
+            <span>{{selected.name}}卦</span> <span>第{{selected.index|toChinesNum}}</span>
         </h2>
-        <div class="text">{{selected.hexagram}}</div>
+        <div class="text" @click="handleGetDetail(-1)">{{selected.hexagram}}</div>
         <div class="hexagram">
             <div v-for="(v,k) of value" @click="handleChange(k)" :key="k" :class="{item: true, no: v=='0'}"></div>
         </div>
         <ul class="trigram">
-            <li v-for="(item, index) of selected.trigrams" :key="index">{{item}}</li>
+            <li v-for="(item, index) of selected.trigrams" :key="index" @click="handleGetDetail(index)">{{item}}</li>
         </ul>
-        <DetailDialog v-if="isDetail" @close="isDetail=false" />
         <SelectDialog 
             v-if="isSelect" 
             :lists="lists" 
             @select="setData" 
             @close="isSelect=false" 
             :selected="selected.value"
+        />
+        <DetailDialog 
+            v-if="isDetail" 
+            :detail="explainDetail" 
+            :index="explainIndex" 
+            @close="isDetail=false" 
         />
     </div>
 </template>
@@ -34,7 +39,10 @@ export default {
             selected: null,
             value: [],
             isDetail: false,
-            isSelect: false
+            isSelect: false,
+            explains: null,
+            explainDetail: null,
+            explainIndex: -1
         }
     },
     created: function(){
@@ -62,6 +70,17 @@ export default {
         },
         handleSelect(){
             this.isSelect=true;
+        },
+        handleGetDetail(index){
+            if(this.explains==null){
+                return util.getJson('./data/export/hexagram.json').then(res=>{
+                    this.explains=res;
+                    this.handleGetDetail(index);
+                });
+            }
+            this.explainIndex=index;
+            this.explainDetail=this.explains.find(e=>e.index==this.selected.index);
+            this.isDetail=true;
         }
     }
 }
