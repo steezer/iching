@@ -78,7 +78,7 @@ body,html{
 
 .dialog .select{
     margin: auto 3vw;
-    padding: 2vw;
+    padding: 2vw 0;
 }
 .dialog .select ul{
     list-style: none;
@@ -95,6 +95,9 @@ body,html{
     text-align: center;
     line-height: 11vw;
     font-size: 0.9rem;
+    color: #333;
+    margin: 0.1vw;
+    background-color: #eee;
 }
 .dialog .select ul li.on{
     font-weight: bold;
