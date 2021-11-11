@@ -1,5 +1,5 @@
 <template>
-    <div class="dialog" @click="$emit('close')">
+    <div class="dialog" @click.self="$emit('close')">
         <div class="body detail">
             <div v-if="trans.length" class="trans">
                 <p v-for="(item, index) of trans" :key="index"><b>译文：</b>{{item}}</p>
