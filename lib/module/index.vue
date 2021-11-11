@@ -1,6 +1,6 @@
 <template>
     <div v-if="selected!=null" class="main">
-        <h2 class="name">
+        <h2 class="name" @click="handleSelect">
             {{selected.name}}卦 第{{selected.index|toChinesNum}}
         </h2>
         <div class="text">{{selected.hexagram}}</div>
@@ -10,7 +10,14 @@
         <ul class="trigram">
             <li v-for="(item, index) of selected.trigrams" :key="index">{{item}}</li>
         </ul>
-        <Dialog />
+        <DetailDialog v-if="isDetail" @close="isDetail=false" />
+        <SelectDialog 
+            v-if="isSelect" 
+            :lists="lists" 
+            @select="setData" 
+            @close="isSelect=false" 
+            :selected="selected.value"
+        />
     </div>
 </template>
 
@@ -18,13 +25,16 @@
 
 export default {
     components: {
-        Dialog: component("@/dialog.vue")
+        DetailDialog: component("@/detail.vue"),
+        SelectDialog: component("@/select.vue")
     },
     data: function(){
         return {
             lists: [],
             selected: null,
-            value: []
+            value: [],
+            isDetail: false,
+            isSelect: false
         }
     },
     created: function(){
@@ -49,6 +59,9 @@ export default {
             let value=this.value;
             value[index]=value[index]=='1' ? '0' : '1';
             this.setData(value.join(''));
+        },
+        handleSelect(){
+            this.isSelect=true;
         }
     }
 }
