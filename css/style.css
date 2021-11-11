@@ -17,7 +17,7 @@ body,html{
     font-size: 1.3rem;
 }
 .main .text{
-    margin: 1vh 8vw;
+    padding: 1vh 8vw;
     font-weight: normal;
     height: 2.5rem;
 }
