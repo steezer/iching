@@ -104,7 +104,7 @@ body,html{
 }
 
 .dialog .detail{
-    margin: auto 3vw;
+    margin: auto 6vw;
     padding: 3vw;
     color: #666;
 }
@@ -112,9 +112,11 @@ body,html{
 .dialog .detail p{
     margin: 0.5vh 0;
 }
-
+.dialog .detail .anno{
+    font-size: 0.9rem;
+}
 .dialog .detail .analysis{
-    max-height: 50vh;
+    max-height: 40vh;
     overflow-y: auto;
     background-color: #eee;
     font-size: 0.9rem;
