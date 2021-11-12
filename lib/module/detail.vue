@@ -2,7 +2,7 @@
     <div class="dialog" @click.self="$emit('close')">
         <div class="body detail">
             <div v-if="trans.length" class="trans">
-                <p v-for="(item, index) of trans" :key="index"><b>译文：</b>{{item}}</p>
+                <p v-for="(item, index) of trans" :key="index"><b>字面译文：</b>{{item}}</p>
             </div>
             <div v-if="anno.length" class="anno">
                 <p v-for="(item, index) of anno" :key="index"><b>注释：</b>{{item}}</p>
