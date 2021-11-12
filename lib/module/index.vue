@@ -3,9 +3,12 @@
         <h2 class="name" @click="handleSelect">
             <span>{{selected.name}}卦</span> <span>第{{selected.index|toChinesNum}}</span>
         </h2>
-        <div class="text" @click="handleGetDetail(-1)">{{selected.hexagram}}</div>
-        <div class="hexagram">
-            <div v-for="(v,k) of value" @click="handleChange(k)" :key="k" :class="{item: true, no: v=='0'}"></div>
+        <div class="text" @click="handleGetDetail(-1)"><span>{{selected.hexagram}}</span></div>
+        <div class="image">
+            <div class="hexagram">
+                <div v-for="(v,k) of value" @click="handleChange(k)" :key="k" :class="{item: true, no: v=='0'}"></div>
+            </div>
+            <UtilWidget :value="selected.value" @change="setData" />
         </div>
         <ul class="trigram">
             <li v-for="(item, index) of selected.trigrams" :key="index" @click="handleGetDetail(index)">{{item}}</li>
@@ -32,7 +35,8 @@
 export default {
     components: {
         DetailDialog: component("@/detail.vue"),
-        SelectDialog: component("@/select.vue")
+        SelectDialog: component("@/select.vue"),
+        UtilWidget: component("@/util.vue")
     },
     data: function(){
         return {
