@@ -18,10 +18,11 @@
             :selected="selected.value"
         />
         <DetailDialog 
-            v-if="isDetail" 
-            :detail="explainDetail" 
-            :index="explainIndex" 
-            @close="isDetail=false" 
+            v-if="isExplain" 
+            :detail="explain.detail" 
+            :index="explain.index"
+            :selected="selected"
+            @close="isExplain=false" 
         />
     </div>
 </template>
@@ -38,11 +39,14 @@ export default {
             lists: [],
             selected: null,
             value: [],
-            isDetail: false,
-            isSelect: false,
-            explains: null,
-            explainDetail: null,
-            explainIndex: -1
+            explain: {
+                lists: null,
+                detail: null,
+                original: null,
+                index: -1
+            },
+            isExplain: false,
+            isSelect: false
         }
     },
     created: function(){
@@ -72,15 +76,15 @@ export default {
             this.isSelect=true;
         },
         handleGetDetail(index){
-            if(this.explains==null){
+            if(this.explain.lists==null){
                 return util.getJson('./data/export/hexagram.json').then(res=>{
-                    this.explains=res;
+                    this.explain.lists=res;
                     this.handleGetDetail(index);
                 });
             }
-            this.explainIndex=index;
-            this.explainDetail=this.explains.find(e=>e.index==this.selected.index);
-            this.isDetail=true;
+            this.explain.index=index;
+            this.explain.detail=this.explain.lists.find(e=>e.index==this.selected.index);
+            this.isExplain=true;
         }
     }
 }

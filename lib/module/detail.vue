@@ -1,8 +1,11 @@
 <template>
     <div class="dialog" @click.self="$emit('close')">
         <div class="body detail">
+            <div class="original">
+                <p>{{original}}</p>
+            </div>
             <div v-if="trans.length" class="trans">
-                <p v-for="(item, index) of trans" :key="index"><b>字面译文：</b>{{item}}</p>
+                <p v-for="(item, index) of trans" :key="index"><b>直译：</b>{{item}}</p>
             </div>
             <div v-if="anno.length" class="anno">
                 <p v-for="(item, index) of anno" :key="index"><b>注释：</b>{{item}}</p>
@@ -16,7 +19,7 @@
 
 <script>
 export default {
-    props: ['index', 'detail'],
+    props: ['index', 'detail', 'selected'],
     data: function(){
         return {
             name: ''
@@ -31,37 +34,25 @@ export default {
         isShow: function(){
             return this.anno.length>0 || this.trans.length>0 || this.analysis.length>0
         },
+        original: function(){
+            return this.index==-1 ? this.selected.hexagram:
+                    this.selected.trigrams[this.index];
+        },
         anno: function(){
-            const index=this.index;
-            const content=index==-1 ?  this.detail.anno : 
-                    (typeof(this.detail.trigrams[index])!='undefined' ?
-                        this.detail.trigrams[index].anno : '');
-            if(content instanceof Array){
-                return content;
-            }
-            if(content!==''){
-                return [content];
-            }
-            return [];
+            return this.getExplain(this.detail, 'anno', this.index);
         },
         trans: function(){
-            const index=this.index;
-            const content=index==-1 ? this.detail.trans : 
-                (typeof(this.detail.trigrams[index])!='undefined' ? 
-                    this.detail.trigrams[index].trans : '');
-            if(content instanceof Array){
-                return content;
-            }
-            if(content!==''){
-                return [content];
-            }
-            return [];
+            return this.getExplain(this.detail, 'trans', this.index);
         },
         analysis: function(){
-            const index=this.index;
-            const content=index==-1 ? this.detail.analysis : 
-                (typeof(this.detail.trigrams[index])!='undefined' ? 
-                    this.detail.trigrams[index].analysis: '');
+            return this.getExplain(this.detail, 'analysis', this.index);
+        }
+    },
+    methods: {
+        getExplain: function(data, type, index){
+            const content=index==-1 ? data[type] : 
+                (typeof(data.trigrams[index])!='undefined' ? 
+                    data.trigrams[index][type]: '');
             if(content instanceof Array){
                 return content;
             }

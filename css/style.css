@@ -112,8 +112,23 @@ body,html{
 .dialog .detail p{
     margin: 0.5vh 0;
 }
+.dialog .detail .original{
+    font-weight: bold;
+    text-align: center;
+    margin: 1vh 0;
+}
+.dialog .detail .trans{
+    font-size: 0.95rem;
+}
 .dialog .detail .anno{
     font-size: 0.9rem;
+    max-height: 20vh;
+    overflow-y: auto;
+    color:#888;
+    margin-bottom: 0.5vh;
+    background-color: #fefefe;
+    word-break: break-all;
+    word-wrap:break-word;
 }
 .dialog .detail .analysis{
     max-height: 40vh;
