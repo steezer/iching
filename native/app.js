@@ -1,10 +1,11 @@
 const util=require("./lib/util");
 
-let hexagrams=util.readJson("./data/export/hexagram.json");
-hexagrams.forEach(e=>{
-    if(typeof(e.analysis)=='string'){
-        e.analysis=[e.analysis];
-    }
-})
-
-util.saveJson("./data/export/hexagram.json", hexagrams);
+let datas=util.readJson("./data/export/basic.json");
+let total=0;
+datas.forEach(e=>{
+    total+=util.wordSplit(e.hexagram).length;
+    e.trigrams.forEach(t=>{
+        total+=util.wordSplit(t).length-2;
+    });
+});
+console.log(total);
